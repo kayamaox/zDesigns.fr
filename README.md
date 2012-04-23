@@ -1,23 +1,22 @@
-zDesigns.fr
-===========
-
+# zDesigns.fr
 Découvrez ici toutes les sources du site zDesigns.fr.
 
 
-# Installation
 
+# Installation
 - Clonez ce dépôt chez vous
 - Créez une base de donnée dont le nom est indiqué dans /classes/bdd.php à la ligne 8 (mysql_select_db)
 - Importez le code SQL que vous trouverez plus bas
 - Allez sur le site que vous venez d'installer, c'est parti !
 
 
+
 # Configuration
 - Tout se trouve dans /inc/core.php
 
 
-# La base de donnée
 
+# La base de donnée
     -- 
     -- Structure de la table ` antiflood ` 
     --  
