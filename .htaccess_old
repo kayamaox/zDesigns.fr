@@ -1,0 +1,38 @@
+RewriteEngine on RewriteBase ./
+
+
+#Forum
+RewriteRule ^forum-([0-9]+)-([0-9]+)-p([0-9]+)\.html$  ./forum.php?action=$1&idf=$2&page=$3  [L,QSA]
+RewriteRule ^forum-([0-9]+)-([0-9]+)-([0-9]+)\.html$  ./forum.php?action=$1&idf=$2&reponse=$3  [L,QSA]
+RewriteRule ^forum-([0-9]+)-([0-9]+)\.html$  ./forum.php?action=$1&idf=$2  [L,QSA]
+RewriteRule ^forum-([0-9]+)\.html$  ./forum.php?action=$1    [L,QSA]
+
+RewriteRule ^membres-([0-9]+)\.html$  ./membres.php?idm=$1  [L]
+
+#Designs
+RewriteRule ^zdesigns-m([0-9]+)-([a-z]+)\.html$  ./zdesigns.php?id_com=$1&action=$2  [L]
+RewriteRule ^zdesigns-c([0-9]+)([a-zA-Z0-9_-]+)\.html$  ./zdesigns.php?id_cat=$1  [L]
+RewriteRule ^zdesigns-([0-9]+)([a-zA-Z0-9_-]+)\.html$  ./zdesigns.php?id=$1  [L]
+RewriteRule ^mes_zdesigns-([0-9]+)-([a-z]+)\.html$  ./mes_zdesigns.php?id=$1&action=$2  [L,QSA]
+RewriteRule ^mes_zdesigns-([0-9]+)\.html$  ./mes_zdesigns.php?id=$1  [L,QSA]
+RewriteRule ^mes_zdesigns-([a-z]+)\.html$  ./mes_zdesigns.php?action=$1  [L,QSA]
+RewriteRule ^designs\/([0-9]+)\/([0-9]+)\/css\/design\.css$  ./designs/design.php?idm=$1&idd=$2  [L,QSA]
+RewriteRule ^designs\/([0-9]+)\/([a-z]+)_dev\/css\/design\.css$  ./designs/design.php?idm=$1&idd=$2&dev=true  [L,QSA]
+
+#Admin
+RewriteRule ^admin-([a-z]+)\.html$  ./admin.php?cat=$1  [L]
+RewriteRule ^admin-([a-z]+)-([a-z]+)\.html$  ./admin.php?cat=$1&action=$2  [L]
+RewriteRule ^admin-([a-z]+)-([a-z]+)-([0-9]+)\.html$  ./admin.php?cat=$1&action=$2&id=$3  [L]
+
+#Livre d'or
+RewriteRule ^livredor-([0-9]+)\.html$  ./livredor.php?page=$1  [L]
+RewriteRule ^livredor-m([0-9]+)-([a-z]+)\.html$  ./livredor.php?id_com=$1&action=$2  [L]
+
+#Global
+RewriteRule ^([a-zA-Z0-9_-]+)\.html$  ./$1.php  [L,QSA]
+
+#Erreurs
+ErrorDocument 401 http://www.zdesigns.fr/401.php
+ErrorDocument 403 http://www.zdesigns.fr/403.php
+ErrorDocument 404 http://www.zdesigns.fr/404.php
+ErrorDocument 500 http://www.zdesigns.fr/500.php

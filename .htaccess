@@ -1,0 +1,126 @@
+RewriteEngine on RewriteBase ./
+
+RewriteCond %{HTTP_HOST} ^zdesigns.fr$
+RewriteRule ^(.*) http://www.zdesigns.fr/$1 [QSA,L,R=301]
+
+
+<ifModule mod_gzip.c>
+    mod_gzip_on Yes
+    mod_gzip_dechunk Yes
+    mod_gzip_item_include file \.(html?|txt|css|js|php|pl)$
+    mod_gzip_item_include handler ^cgi-script$
+    mod_gzip_item_include mime ^text/.*
+    mod_gzip_item_include mime ^application/x-javascript.*
+    mod_gzip_item_exclude mime ^image/.*
+    mod_gzip_item_exclude rspheader ^Content-Encoding:.*gzip.*
+</ifModule>
+
+
+# BEGIN Expire headers
+<IfModule mod_expires.c>
+    ExpiresActive On
+    ExpiresDefault "access plus 7200 seconds"
+    ExpiresByType image/jpg "access plus 2592000 seconds"
+    ExpiresByType image/jpeg "access plus 2592000 seconds"
+    ExpiresByType image/png "access plus 2592000 seconds"
+    ExpiresByType image/gif "access plus 2592000 seconds"
+    AddType image/x-icon .ico
+    ExpiresByType image/ico "access plus 2592000 seconds"
+    ExpiresByType image/icon "access plus 2592000 seconds"
+    ExpiresByType image/x-icon "access plus 2592000 seconds"
+    ExpiresByType text/css "access plus 2592000 seconds"
+    ExpiresByType text/javascript "access plus 2592000 seconds"
+    ExpiresByType text/html "access plus 7200 seconds"
+    ExpiresByType application/xhtml+xml "access plus 7200 seconds"
+    ExpiresByType application/javascript "access plus 2592000 seconds"
+    ExpiresByType application/x-javascript "access plus 2592000 seconds"
+    ExpiresByType application/x-shockwave-flash "access plus 2592000 seconds"
+</IfModule>
+# END Expire headers
+
+
+# BEGIN Cache-Control Headers
+<ifModule mod_headers.c>
+  <filesMatch "\\.(ico|pdf|flv|jpg|jpeg|png|gif|swf)$">
+    Header set Cache-Control "max-age=2592000, public"
+  </filesMatch>
+  <filesMatch "\\.(css)$">
+    Header set Cache-Control "max-age=604800, public"
+    Header set Vary "Accept-Encoding"
+  </filesMatch>
+  <filesMatch "\\.(js)$">
+    Header set Cache-Control "max-age=604800, private"
+  </filesMatch>
+  <filesMatch "\\.(xml|txt)$">
+    Header set Cache-Control "max-age=216000, public, must-revalidate"
+  </filesMatch>
+  <filesMatch "\\.(html|htm|php)$">
+    Header set Cache-Control "max-age=1, private, must-revalidate"
+  </filesMatch>
+    Header unset Server
+</ifModule>
+# END Cache-Control Headers
+
+
+# Protection du fichier .htaccess
+<Files .htaccess>
+    Order allow,deny
+    Deny from all
+    Satisfy All
+</Files>
+
+# Protection de la lecture des répertoires
+Options -Indexes
+
+
+
+#Redirection
+RewriteRule ^redirection-([0-9]+)\.html$  ./redirection.php?idd=$1  [L]
+
+#Designs
+RewriteRule ^zdesigns/designs/(.*)$  ./designs/$1  [L,QSA]
+
+#Forum
+RewriteRule ^forum-([0-9]+)-([0-9]+)-p([0-9]+)\.html$  ./forum.php?action=$1&idf=$2&page=$3  [L,QSA]
+RewriteRule ^forum-([0-9]+)-([0-9]+)-([0-9]+)\.html$  ./forum.php?action=$1&idf=$2&reponse=$3  [L,QSA]
+RewriteRule ^forum-([0-9]+)-([0-9]+)\.html$  ./forum.php?action=$1&idf=$2  [L,QSA]
+RewriteRule ^forum-([0-9]+)\.html$  ./forum.php?action=$1    [L,QSA]
+
+RewriteRule ^membres-([0-9]+)\.html$  ./membres.php?idm=$1  [L]
+
+#Designs
+RewriteRule ^zdesigns-m([0-9]+)-([a-z]+)\.html$  ./zdesigns.php?id_com=$1&action=$2  [L]
+RewriteRule ^zdesigns-c([0-9]+)-t([0-9]+)([a-zA-Z0-9_-]+)\.html$  ./zdesigns.php?id_cat=$1&id_tri=$2  [L]
+RewriteRule ^zdesigns-c([0-9]+)([a-zA-Z0-9_-]+)\.html$  ./zdesigns.php?id_cat=$1  [L]
+RewriteRule ^zdesigns-t([0-9]+)([a-zA-Z0-9_-]+)\.html$  ./zdesigns.php?id_tri=$1  [L]
+RewriteRule ^zdesigns-([0-9]+)\.html$  ./zdesigns.php?id=$1  [L]
+RewriteRule ^zdesigns-([0-9]+)([a-zA-Z0-9_-]+)\.html$  ./zdesigns.php?id=$1  [L]
+RewriteRule ^mes_zdesigns-([0-9]+)-([a-z]+)\.html$  ./mes_zdesigns.php?id=$1&action=$2  [L,QSA]
+RewriteRule ^mes_zdesigns-([0-9]+)\.html$  ./mes_zdesigns.php?id=$1  [L,QSA]
+RewriteRule ^mes_zdesigns-([a-z]+)\.html$  ./mes_zdesigns.php?action=$1  [L,QSA]
+# RewriteRule ^designs\/([0-9]+)\/([0-9]+)\/css\/design\.css$  ./designs/design.php?idm=$1&idd=$2  [L,QSA]
+# RewriteRule ^designs\/([0-9]+)\/([a-z]+)_dev\/css\/design\.css$  ./designs/design.php?idm=$1&idd=$2&dev=true  [L,QSA]
+
+#Admin
+RewriteRule ^admin-([a-z]+)\.html$  ./admin.php?cat=$1  [L]
+RewriteRule ^admin-([a-z]+)-p([0-9]+)\.html$  ./admin.php?cat=$1&page=$2  [L]
+RewriteRule ^admin-([a-z]+)-f([0-9]+)-([a-z\-]+)\.html$  ./admin.php?cat=$1&filtre=$2  [L]
+RewriteRule ^admin-([a-z]+)-f([0-9]+)-([a-z\-]+)-p([0-9]+)\.html$  ./admin.php?cat=$1&filtre=$2&page=$4  [L]
+RewriteRule ^admin-([a-z]+)-([a-z]+)\.html$  ./admin.php?cat=$1&action=$2  [L]
+RewriteRule ^admin-([a-z]+)-([a-z]+)-([0-9]+)\.html$  ./admin.php?cat=$1&action=$2&id=$3  [L]
+
+#Livre d'or
+RewriteRule ^livredor-([0-9]+)\.html$  ./livredor.php?page=$1  [L]
+RewriteRule ^livredor-m([0-9]+)-([a-z]+)\.html$  ./livredor.php?id_com=$1&action=$2  [L]
+
+#Tchat
+RewriteRule ^tchat-([0-9]+)\.html$  ./tchat.php?idm=$1  [L,QSA]
+
+#Global
+RewriteRule ^([a-zA-Z0-9_-]+)\.html$  ./$1.php  [L,QSA]
+
+#Erreurs
+ErrorDocument 401 http://www.zdesigns.fr/erreur.php?e=401
+ErrorDocument 403 http://www.zdesigns.fr/erreur.php?e=403
+ErrorDocument 404 http://www.zdesigns.fr/erreur.php?e=404
+ErrorDocument 500 http://www.zdesigns.fr/erreur.php?e=500
