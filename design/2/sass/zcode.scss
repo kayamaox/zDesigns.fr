@@ -1,0 +1,175 @@
+.zcode {
+    ﻿.fl, .flot_gauche { float: left; } /*.flot_gauche sert pour le zCode */
+    .fr, .flot_droite { float: right;} /*.flot_droite sert pour le zCode */
+    .flot_gauche, .flot_droite {
+        margin-top: 1em;
+        margin-right: 1em;
+        margin-bottom: 1em;
+        margin-left: 1em;
+    }
+
+    .dnone{ display: none; }
+    .dinline{ display: inline; }
+    .dblock{ display: block; }
+
+    .orange, .couleur_valid  { color: #EC7600; }
+    .noir { color: black; }
+    .marron { color: maroon; }
+    .vertf, .couleur_newser  { color: green; }
+    .olive { color: olive; }
+    .marine { color: navy; }
+    .violet { color: purple; }
+    .bleugris { color: teal; }
+    .argent { color: silver; }
+    .gris { color: #646464; }
+    .rouge, .couleur_admin { color: red; }
+    .vertc { color: lime; }
+    .jaune { color: yellow; }
+    .bleu, .couleur_modo { color: blue; }
+    .rose { color: fuchsia; }
+    .turquoise { color: aqua; }
+    .blanc { color: white; }
+
+    .arial { font-family: Arial, serif; }
+    .times { font-family: Times, serif; }
+    .courrier { font-family: 'DejaVu Sans Mono', Courier, monospace; }
+    .impact { font-family: Impact, serif; }
+    .geneva { font-family: Geneva, serif; }
+    .optima { font-family: Optima, serif; }
+
+    .ttpetit { font-size: xx-small; }
+    .tpetit { font-size: x-small; }
+    .petit { font-size: small; }
+    .gros { font-size: large; }
+    .tgros { font-size: x-large; }
+    .ttgros { font-size: xx-large; }
+    .fontsize_09 { font-size: 0.9em; }
+    .fontsize_08 { font-size: 0.8em; }
+
+    .vcentre { vertical-align: middle !important; }
+
+    .centre { text-align: center; }
+    .gauche { text-align: left; }
+    .droite { text-align: right; }
+    .justifie { text-align: justify; }
+
+    .souligne { text-decoration: underline; }
+    .barre { text-decoration: line-through; }
+    .italique { font-style: italic; }
+    .gras { font-weight:bold; }
+
+    .liste_i { list-style-type: lower-roman; }
+    .liste_I { list-style-type: upper-roman; }
+    .liste_a { list-style-type: lower-latin; }
+    .liste_A { list-style-type: upper-latin; }
+    .liste_1 { list-style-type: decimal; }
+    .liste_rectangle { list-style-type: square; }
+    .liste_cercle { list-style-type: circle; }
+    .liste_disque { list-style-type: disc; }
+    .liste_defaut {	list-style-image: url("img/zcode/liste_img.png");}
+
+    .clearer { clear: both; }
+
+    .margin_1em { margin: 1em; }
+
+    h3
+    {
+            font-size:1.5em;
+            margin: 0;
+            margin-left:20px;
+            color: #E8A22B;
+            font-weight: bold;
+            background: transparent;
+    }
+
+    #corps h4
+    {
+            font-weight:bold;
+            font-size:1.2em;
+            font-style:italic;
+            color: #1877D5;
+            margin: 0;
+            margin-left:50px;
+    }
+
+    a:link, a:visited, a:active { color: #2677C9; text-decoration: underline; }
+    a:hover, a:focus { color: #C87B02; text-decoration: none; outline: none; }
+    a img { border: 0 }
+    a img:active { background: none; }
+    img { border: none;	vertical-align: middle; }
+
+    acronym { cursor: help; }
+
+
+    span.code, span.citation, span.spoiler, span.spoiler_hidden /* Titre du code, de la citation et du spoiler */
+    {
+            font-weight: bold;
+            display:block;
+            margin-left: 40px;
+    }
+
+    div.code2, .citation2, .spoiler2, .spoiler2_hidden /* Contenu du code, de la citation et du spoiler */
+    {
+            border:2px solid #DEE5F0;
+            -moz-border-radius: 5px;
+            -webkit-border-radius: 5px;
+            background-color: #F6F8FC;
+            padding: 8px;
+            overflow: auto;
+    }
+
+    .code2, .citation2, .spoiler2, .spoiler2_hidden {
+            max-height: 700px;
+    }
+
+
+    /* Les tableaux zCode */
+    .tab_user
+    {
+            border-collapse:collapse;
+            border:2px solid #2C485C;
+            margin: 0px auto 0px auto;
+    }
+    .tab_user td
+    {
+            border:1px solid #2C485C;
+            background-color:#E9F0F5;
+            padding:2px;
+    }
+    .tab_user th
+    {
+            padding:2px;
+    }
+
+
+
+
+    .rmq /* Style des "remarques" : information, erreur, question et attention */
+    {
+            background-position: left;
+            background-repeat: no-repeat;
+            padding: 4px 0 4px 50px;
+    }
+    .erreur     {color: #BE0B0B;background-image: url('img/zcode/zcode_erreur.png');}
+    .question   {color: #145AC1;background-image: url('img/zcode/zcode_question.png');}
+    .attention  {color: #DA5E0F;background-image: url('img/zcode/zcode_attention.png');}
+    .information{color: #7D9B0A;background-image: url('img/zcode/zcode_info.png');}
+
+    .information, .attention, .question, .erreur
+    {
+            height:46px; /* On fixe la hauteur, que IE interprète comme une "hauteur minimale" */
+            text-align:left;
+    }
+    /* Petit arrangement CSS pour une différence entre IE et Firefox. On rétablit en fait la hauteur en auto (par défaut), et on utilise min-height pour définir une hauteur minimale sous Firefox et autres navigateurs comprenant le CSS 2. */
+    html>body .information, html>body .attention, html>body .question, html>body .erreur
+    {
+            height:auto;
+            min-height:30px;
+    }
+
+    .spoiler3 {	visibility: hidden; }
+    .spoiler3_hidden { display: none; }
+    img { max-width: 100%; }
+}
+
+

@@ -1,0 +1,3 @@
+[17-Jan-2011 12:08:32] PHP Warning:  XSLTProcessor::transformToXml() [<a href='xsltprocessor.transformtoxml'>xsltprocessor.transformtoxml</a>]: No stylesheet associated to this object in /home/zdesigns/public_html/zform/class.zcode.php on line 165
+[17-Jan-2011 12:08:47] PHP Warning:  XSLTProcessor::transformToXml() [<a href='xsltprocessor.transformtoxml'>xsltprocessor.transformtoxml</a>]: No stylesheet associated to this object in /home/zdesigns/public_html/zform/class.zcode.php on line 165
+[17-Jan-2011 12:09:46] PHP Warning:  XSLTProcessor::transformToXml() [<a href='xsltprocessor.transformtoxml'>xsltprocessor.transformtoxml</a>]: No stylesheet associated to this object in /home/zdesigns/public_html/zform/class.zcode.php on line 165

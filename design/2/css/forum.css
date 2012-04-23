@@ -1,0 +1,346 @@
+
+/*
+*   Document    : forum
+*   Créé le     : 24 03 2011, 20:39:28
+*   Auteur      : kenny61
+*   Description :
+*      feuille de style appliquée pour le forum*/
+table.forum_index{
+border-collapse: collapse;
+border:1px solid #cec9c2;
+-moz-border-radius: 5px;
+-webkit-border-radius: 15px;
+}
+table.forum_index{ /* Tableau page accueil forum*/
+   width: 98%;
+   height: auto;
+   border: 1px solid #cec9c2;
+   font-family: arial;
+   -moz-border-radius: 5px;
+   -webkit-border-radius: 5px;
+   -moz-box-shadow: 0px 0px 15px #c6bfb6;
+	-webkit-box-shadow: 0px 0px 15px #c6bfb6;
+}
+.forum_index thead th {
+  background:#e6e3de url("../images/fonds/zexplorer.png");
+  height: 30px;
+  text-align: center;
+}
+#forum{
+   width: 99%;
+   padding-left: 10px;
+}
+
+#forum .titre_categorie{
+   padding-left: 5px;
+   letter-spacing: 1.5px;
+}
+#forum td.nombre_sujets,.nombre_reponses,.last_message,.les_sujets,.les_reponses,.message_dernier,.postit_auteur,.postit_reponse,.postit_lastmessage,.auteur,.reponses,.dernier_message,.page,.postit_page{
+   text-align: center;
+}
+#forum td.categories{
+   background: url('.../imagesimages/forum/dossier_impaire.png') no-repeat left;
+   padding-left: 30px;
+   font-family: Trebuchet MS, verdana;
+   color: #535353;
+   font-size: 11px;
+   font-style: italic;
+   height: 50px;
+   overflow: auto;
+   
+}
+#forum td.categories a{
+   color: black;
+   font-size: 13px;
+   font-style: normal;
+}
+#forum td.nombre_sujets,.nombre_reponses,.last_message,.les_sujets,.les_reponses,.message_dernier,.postit_auteur,.postit_reponse,.postit_lastmessage,.auteur,.reponses,.dernier_message,.page,.postit_page{
+   text-align: center;
+}
+#forum td.categories{
+   background: url('.../imagesimages/forum/dossier_impaire.png') no-repeat left;
+   padding-left: 30px;
+   font-family: Trebuchet MS, verdana;
+   color: #535353;
+   font-size: 11px;
+   font-style: italic;
+   height: 50px;
+   overflow: auto;
+   
+}
+.trinfos,.sous_categorie{
+	background:  url('../images/fonds/bg_cat.png') repeat-x top;
+	height: 30px;
+}
+#forum tr.sous_categorie a{
+	color: #eae9e8;
+	text-decoration: none;
+	font-family: trebuchet ms;
+	padding-left: 5px;
+	font-size: 12px;
+}
+#forum tr.sous_categorie{
+	color: #eae9e8;
+	vertical-align: bottom;
+}
+#forum td.categories a{
+   color: black;
+   font-size: 12px;
+}
+.case_dernier{
+   width: 15%;
+}
+ul.liste_cercle{
+   list-style-type: circle;
+}
+ul.liste_disque{
+   list-style-type: disc;
+}
+ul.liste_rectangle{
+   list-style-type: square;
+}
+ol.liste_1
+{
+   list-style-type: decimal;
+}
+ol.liste_I
+{
+   list-style-type: upper-roman;
+}
+ol.liste_i
+{
+   list-style-type: lower-roman;
+}
+ol.liste_rien
+{
+   list-style-type: none;
+}
+/* Mise en forme de l'editeur */
+.editeur{
+   width: 100%;
+   margin-top: 2%;
+   float: left;
+}
+.editeur_titre{
+   width: auto;
+   font-size: 1.4em;
+   color: #0B88A8;
+   height: 55px;
+   background: #E5E5E5 url('.../imagesimages/_haut_news.png') repeat-x ;
+   font-variant:small-caps;
+   font-family:"Trebuchet MS",Verdana,Geneva,Arial,Helvetica;
+}
+.editeur_auteur{
+   width: auto;
+   padding-left: 50px;
+   padding-bottom: 10px;
+   text-indent:10px;
+   line-height: 20px;
+   background-color: #D9D9D9;
+   margin-left: 22.5px;
+   margin-right: 22.5px;
+   padding-top: 10px;
+}
+.editeur_texte{
+   font-size: 1.0em;
+   margin-top: 0;
+   padding-bottom: 30px;
+   display: block;
+   text-indent:10px;
+   line-height: 20px;
+   background-color: #D9D9D9;
+   margin-left: 22.5px;
+   padding-left: 10px;
+   margin-right: 22.5px;
+   padding-right: 10px;
+}
+.bordure_gauche{
+   background: url('.../imagesimages/contenu_g.png') repeat-y scroll left;
+}
+.bordure_droite{
+   background: url('.../imagesimages/contenu_d.png') repeat-y scroll right;
+}
+.editeur_bottom{
+   width: auto;
+   height: 55px;
+   background: #E5E5E5 url('.../imagesimages/bas_news.png') repeat-x;
+}
+.float_left{
+   float: left;
+}
+.float_right{
+   float: right;
+}
+p.titre_editeur{
+   padding-top: 25px;
+   font-size: 1.3em;
+}
+/* Sous forum */
+table.table_sous_forum{
+   border: 1px solid #d9d9d9;
+   width:99%;
+   padding: 1px;
+   margin-top: 1%;
+   border-collapse: collapse;
+}
+.table_sous_forum a{
+   color: #4c79ad;
+   font-size: 12px;
+   font-weight: bold;
+   font-family: helvetica;
+}
+.table_sous_forum thead th {
+   background: #EF7E04 url(.../imagesimages/forum/trhead_topic.png) repeat-x scroll 0 0;
+}
+.tr_topic,.tr_postit,.sujet_paire,.sujet_impaire td{
+   border-top: 1px dashed #d5d4d4;
+   border-bottom: 1px dashed #d5d4d4;
+}
+.image_forum{
+   width: 30px;
+   text-align: center;
+}
+.case_resolut{
+   width: 30px;
+   text-align: center;
+}
+.sous_titre{
+   font-size: 11px;
+   padding-left: 5px;
+}
+.sujet_paire{
+   background-color: #eae9e9;
+}
+.tr_postit{
+   background-color: #eae9e9;
+}
+.sujet_impaire{
+   background-color: #eeeeee;
+}
+/* Visionnage topic */
+
+table.liste_messages{
+   border: 1px solid #d9d9d9;
+   width:99%;
+   padding: 1px;
+   margin-top: 1%;
+}
+.liste_messages td{
+   vertical-align: middle;
+}
+.pages_topic a{
+   color: #4c79ad;
+   font-size: 12px;
+   font-weight: bold;
+   font-family: helvetica;
+}
+
+.case_page{
+   width: 60px;
+   text-align: left;
+}
+.message_dernier{
+   font-size: 10px;
+}
+.message_dernier a{
+	text-decoration: none;
+	font-size: 12px;
+	color: #5c554a;
+}
+.liste_messages thead th {
+   background: #EF7E04 url(.../imagesimages/forum/trhead_topic.png) repeat-x scroll 0 0;
+}
+.nom_membre a{
+   color: #304a69;
+   font-size: 11px;
+   font-weight: bold;
+   font-family: helvetica;
+   padding-left: 2px;
+}
+.thauteur,.nom_membre,.infos_membre{
+   width: 130px;
+}
+.infos_membre{
+   font-size: 9px;
+   background-color:#E5E5E5;
+   border:1px dashed #d9d9d9;
+   margin:0 auto 15px;
+   padding-left:5px;
+   padding-right:5px;
+   padding-top:5px;
+   vertical-align: top;
+}
+.infos_date{
+   font-size: 10px;
+   font-style: italic;
+}
+.message_membre{
+   padding: 5px;
+   vertical-align: top;
+}
+.post_membre{
+   background-color:#E5E5E5;
+   border:1px dashed #d9d9d9;
+   margin:0 auto 15px;
+   padding-left:5px;
+   padding-right:5px;
+   width:auto;
+   
+}
+td.post_membre{
+   vertical-align: top;
+}
+td.infos_membre{
+   vertical-align: top;
+}
+td.postit_logo,.sujet{
+   text-align: left;
+   width: 55px;
+}
+.message_edite{
+   margin-top: 20px;
+   padding-left: 10px;
+   font-size: 9px;
+   font-style: italic;
+}
+.signature_membre{
+   clear:both;
+   margin-top: 10px;
+   padding-top: 5px;
+   border-top: 1px dashed #d9d9d9;
+   height: 120px;
+   max-height: 120px;
+   overflow:hidden;
+}
+.post_membre{
+   vertical-align: top;
+}
+.page_active{
+   color: red;
+}
+.sujet_resolu{
+   background: url('.../imagesimages/forum/resolu_fond_affichage') repeat-x;
+   height: 35px;
+   color: green;
+   padding-top: 2px;
+   font-size: 16px;
+   text-align: center;
+}
+.option_post img,.option_post span{
+   vertical-align: middle;
+   display: inline-block;
+}
+.option_post span{
+   padding-left: 25px;
+}
+.liste_forum{
+   text-align: right;
+}
+.reprise_dernier_message{
+   text-indent:25px;
+   font-weight: bold;
+   margin-bottom: 20px;
+}
+.boutons_repondre_nouveau,.boutons_nouveau{
+   text-align: right;
+}

@@ -1,0 +1,477 @@
+@import    "news.css";
+@import    "zdesigns.css";
+@import    "forum.css";
+@import    "mes_zdesigns.css";
+@import    "membres.css";
+@import    "lightbox.css";
+@import    "message.css";
+@import    "zcode.css";
+@import    "zform.css";
+
+
+body {
+min-height:1350px;
+margin:0;
+width:auto;
+background-color: #eeeeee;
+}
+#header {
+height:230px;
+width: auto;
+background:url('../images/fond_top.png');
+background-repeat: repeat-x;
+}
+img{
+border: none;
+}
+#transition{
+width: auto;
+height: 35px;
+background-image: url('../images/fond_speedbar.png');
+background-repeat: repeat-x;
+}
+
+#speedbarre {
+width: auto;
+height:55px;
+padding-left:0px;
+margin-top: -15px;
+}
+#speedbarre li {
+font-family:'Trebuchet MS',Arial,'Times new roman',Times,serif;
+height:30px;
+width: auto;
+padding-top:0px;
+padding-bottom: 0;
+text-align:center;
+display: inline;
+list-style-type:none;
+}
+#speedbarre .gauche {
+float:left;
+height: 50px;
+border-bottom: 1px dashed #B2B4B5 ;
+}
+#speedbarre .droite {
+float:right;
+height: 50px;
+border-bottom: 1px dashed #B2B4B5 ;
+}
+#speedbarre .droite form {
+display: inline;
+}
+#speedbarre a {
+font-size: 1.1em;
+color: #e62dca;
+font-weight: normal;
+}
+#speedbarre a:hover {
+color:#111111;
+}
+#menu{
+float: left;
+width: 176px;
+height: 100%;
+margin-left: 5px;
+}
+#menu .element_menu .bloc h4{
+background-image:url('../images/fond_menu_test.png');
+background-repeat: no-repeat;
+padding-bottom: 3px;
+padding-top: 25px; /* A annuler à la fin du décors de Noel */
+height: 25px;
+font-size:15px;
+text-align: center;
+font-family: Trebuchet MS, Lucida Console, Arial, Tahoma;
+border-bottom: 1px solid #DBDBDB;
+}
+#menu .element_menu .bloc{
+background:transparent url('../images/fond_menu_ul_test.png') no-repeat scroll left bottom;
+padding-bottom: 15px;
+width: 176px;
+margin-top: 20px;
+min-height: 100px;
+}
+#menu .element_menu .publicite {
+background:transparent url('../images/fond_menu_ul_test.png') scroll left bottom;
+background-repeat: no-repeat;
+padding-bottom: 5px;
+width: 176px;
+margin-top: 20px;
+height: 720px;
+text-align: center;
+}
+#menu .element_menu .publicite h4{
+background-image:url('../images/fond_menu_test.png');
+background-repeat: no-repeat;
+padding-bottom: 3px;
+padding-top: 25px; /* A annuler à la fin du décors de Noel */
+height: 25px;
+font-size:15px;
+text-align: center;
+font-family: Trebuchet MS, Lucida Console, Arial, Tahoma;
+}
+#menu .element_menu .bloc a{
+float: left;
+color: #14141a;
+font-size:12.5px;
+height:20px;
+line-height:20px;
+text-decoration:none;
+padding-left: 10px;
+width: 159px; /* Reduire valeur en fonction du padding-left*/
+display: block
+}
+#menu .element_menu .bloc li{
+font-style:oblique;
+font-weight: normal;
+color: #14141a;
+font-size:12px;
+height:20px;
+line-height:20px;
+width: 176px;
+display: block;
+font-family: Arial, serif, Tahoma, Kartika, Century Gothic, Arial, Book Antiqua, Franklin Gothic Medium,Verdana;
+}
+#menu li.texte{
+padding-left: 10px;
+}
+#menu .element_menu ul{
+list-style-type: none;
+padding-left: 0px;
+width: 176px;
+padding:0;
+margin:0;
+}
+.bloc a:hover{ /* IE6 ne gère hover que sur la balise a*/
+border-left: 2px solid #E62DD0;
+color: black;
+font-weight: bold;
+}
+
+#menu .element_menu h2 {
+font-family:serif;
+font-size:18px;
+line-height:8px;
+}
+#menu .element_menu h4 {
+background-image: url('menu-top.jpg');
+background-repeat: no-repeat;
+color: #0b88a8;
+}
+#connexion{
+float: left;
+width: auto;
+height: auto;
+text-align: left;
+margin-right: 2px;
+}
+#connexion input#pseudo,input#pass{
+color: #E62DCA;
+font-family: "Lucida Sans Unicode","Trebuchet MS";
+font-weight: bold;
+width: 150px;
+float: left;
+padding-left: 25px;
+font-size: 1.1em;
+margin-bottom: 5px;
+}
+#connexion input#pseudo{
+background-image:url(../images/login.png);
+background-repeat: no-repeat;
+}
+#connexion input#pass{
+background-image:url(../images/password2.png);
+background-repeat: no-repeat;
+}
+#connexion li{
+list-style-type: none;
+width: auto;
+height: 20px;
+}
+#connexion .partie1{
+width: 250px;
+height: auto;
+}
+#connexion .partie2{
+width: auto;
+height: auto;
+text-align: left;
+font-size: 1.0em;
+margin-top: 2%;
+}
+#connexion ul{
+list-style-type: none;
+padding-left: 0px;
+padding:0;
+margin:0;
+margin-top: 1%;
+}
+.presentation{
+height: 80px;
+background-image:url(../images/image_accueil.png);
+background-repeat: no-repeat;
+background-position: bottom right;
+}
+#global{
+float: left;
+width: 100%;
+margin-left: 0;
+margin-right: 0;
+margin-top: 0;
+min-height: 500px;
+height: auto;
+font-family:"Lucida Sans Unicode","Trebuchet MS",Verdana,Geneva,Arial,Helvetica;
+font-size: 0.9em;
+font-weight:inherit;
+color: #23282a;
+background-color: #eeeeee;
+}
+#corps .plan{
+padding-left: 30px;
+height: 25px;
+border-bottom:2px solid #B5DBEC;
+border-left:2px solid #B5DBEC;
+font-family:Verdana,Geneva,Arial,Helvetica;
+font-size: 0.9em;
+}
+a{
+text-decoration: none;
+color: #0575a8;
+}
+a:visited{
+color: #023c56;
+}
+a:hover{
+color: #f68b00;
+}
+#corps{
+
+width: auto;
+margin-left: 175px;
+margin-right: 200px;
+margin-right: 1%;
+margin-top: 2%;
+min-height: 700px;
+height: auto;
+padding-left: 35px;
+padding-right:15px;
+font-family:"Lucida Sans Unicode","Trebuchet MS",Verdana,Geneva,Arial,Helvetica;
+font-size: 0.9em;
+font-weight:inherit;
+color: #23282a;
+
+}
+#corps h1{
+border-bottom:thin solid #D115C0;
+
+font-size: 1.6em;
+font-weight:inherit;
+color: #d110b4;
+padding-left: 0px;
+width: auto;
+}
+
+#corps h2{
+border-bottom:1px solid #0B88C1;
+font-size: 1.4em;
+font-weight:inherit;
+color: #0B88C1;
+padding-left: 2%;
+}
+#corps h3{
+border-bottom:1px dashed #0B88C1;
+font-size: 1.2em;
+font-weight:inherit;
+color: #0B88C1;
+padding-left: 2%;
+}
+#corps p{
+padding-left: 15px;
+padding-right: 20px;
+}
+
+#corps .upload a {
+color:#0B88C1;
+vertical-align: super;
+}
+#corps .presentation li{
+list-style-type: disc;
+}
+#corps li{
+padding-left: 25px;
+list-style-type: none;
+}
+
+#news .contenu_news{
+text-indent: 20px;
+}
+.bloc_admin{
+width: auto;
+text-align: center;
+margin-left: auto;
+margin-right: auto;
+}
+.admin1,.admin2,.admin3,.admin4{
+width: 328px;
+height: 372px;
+background-repeat: no-repeat;
+text-align: left;
+}
+.bloc_admin li{
+margin-top: 2%;
+padding-top: 2%;
+text-align: left;
+}
+.admin1{
+background-image:url(../images/fond_admin.jpg);
+float: left;
+}
+.admin2{
+background-image:url(../images/fond_admin2.jpg);
+float: left;
+}
+.admin3{
+background-image:url(../images/fond_admin3.jpg);
+float: left;
+}
+.admin4{
+background-image:url(../images/fond_admin2.jpg);
+float: left;
+}
+h2#titre_admin{
+font-family: helvetica;
+border: none;
+padding-top: 35px;
+padding-bottom: 25px;
+color: #073b43;
+text-align: center;
+font-size: 19px;
+}
+#livreor{
+width: 97%;
+height: auto;
+}
+.deposer_message{
+border-top: 1px dashed #ABA7A7;
+border-bottom: 1px dashed #ABA7A7;
+padding-bottom: 15px;
+margin-bottom: 1%;
+margin-top: 15px;
+}
+.contenu_message{
+margin:0px auto 15px;
+background-color: #E5E5E5;
+border: 1px solid #ABA7A7;
+padding-left: 5px;
+padding-right: 5px;
+width: auto;
+}
+.contenu_titre{
+border-bottom: 1px dashed #ABA7A7;
+}
+.titre_h2{
+font-size: 1.1em;
+font-weight:inherit;
+color: #0B88C1;
+display: inline;
+border: none;
+padding: 0;
+}
+.contenu_message p{
+
+padding-left: 15px;
+padding-right: 15px;
+font-size: 0.9em;
+text-indent: 0px;
+}
+acronym{
+cursor:help
+}
+#tableau_contact{
+text-align: left;
+font-weight: bold;
+}
+#footer{
+float: left;
+width: 100%;
+height: 100px;
+background: url('../images/fond_footer2.png') repeat-x scroll left top;
+border-top: 0px solid black;
+clear:both;
+text-align: center;
+margin-top: 5%;
+margin-bottom: 0;
+font-family:"Lucida Sans Unicode","Trebuchet MS",Verdana,Geneva,Arial,Helvetica;
+padding-bottom: 0;
+font-size: 13px;
+overflow:hidden;
+}
+label {
+display:block;
+width:170px;
+float:left;
+}
+legend{
+color: #0BABD7;
+}
+.mes_designs table{
+border-collapse: collapse;
+}
+.mes_designs th {
+font-family:"Lucida Sans Unicode","Trebuchet MS",Verdana,Geneva,Arial,Helvetica;
+border: thin solid #6495ed;
+background: #c5defb url('../images/fond_tableau_meszdesigns.png') repeat-x;
+height: 25px;
+}
+.mes_designs td{
+border: 1px dashed #6495ed;
+padding-top: 10px;
+padding-bottom: 10px;
+}
+.ouinon form{
+display: inline;
+}
+#top_postit{
+width:750px;
+height: 155px;
+background-image: url('../images/top_postit.png');
+background-repeat: no-repeat;
+}
+#corps_postit{
+width:750px;
+height: auto;
+background-image: url('../images/corps_postit.png');
+background-repeat: repeat-y;
+}
+table#mes_zdesigns td{
+border-bottom: 1px dashed #CFBD3D;
+padding-top: 10px;
+}
+#bottom_postit{
+width:750px;
+height: 213px;
+background-image: url('../images/bottom_postit.png');
+background-repeat: no-repeat;
+}
+table#mes_zdesigns{
+margin-left: 50px;
+}
+table#mes_zdesigns td{
+height: auto;
+}
+thead{
+padding-bottom: 50px;
+}
+table#postit{
+margin-left: 40px;
+}
+#logotop{
+position: absolute;
+float: right;
+top: 10px;
+right: 10px;
+}
+form fieldset {
+    border: none;
+ }

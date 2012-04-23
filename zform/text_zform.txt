@@ -1,0 +1,70 @@
+<image>http://www.siteduzero.com/Templates/images/designs/2/logo_sdz_fr.png</image>
+<titre1>Titre de niveau 1</titre1>
+
+:) :ange: 
+
+<code type="php" debut="500" titre="coucou" url="http://google.fr" ><?php
+if ($direBonjour) {
+    echo "Salut !";
+    appelFonction();
+    echo "Au revoir !";
+}
+?></code>
+<code type="zcode"><code><image></code>
+	<tableau>
+		<ligne><entete>Entete1</entete><entete>Entete2</entete></ligne>
+		<ligne><cellule>1</cellule><cellule>2</cellule></ligne>
+		<ligne><cellule>3</cellule><cellule>4</cellule></ligne>
+	</tableau>
+	
+	<titre2>titre de niveau 2</titre2>
+	
+	<citation nom="Lorem Ipsum"><citation>Eodem tempore Serenianus ex duce, cuius ignavia populatam <couleur nom="orange">in Phoenice Celsen ante rettulimus</couleur>
+	Sed tamen haec cum ita tutius observentur, quidam vigore artuum inminuto rogati ad nuptias ubi aurum dextris manibus cavatis offertur, inpigre vel usque Spoletium pergunt. haec nobilium sunt instituta.</citation>Excitavit hic ardor milites per municipia plurima, quae isdem conterminant, dispositos et castella</citation>
+
+	<liste>
+		<puce><g>Lorem Ipsum</g> (les balises <g> restent telles quelles car elles ne sont pas autorisées)</puce>
+		<puce>Lorem Ipsum</puce>
+		<puce>Lorem Ipsum</puce>
+	</liste>
+	
+<titre2>Différents types de liens</titre2>
+<liste type="A">
+<puce>lien sans zcode : http://www.siteduzero.com</puce>
+<puce>lien simple : <lien>http://www.siteduzero.com</lien></puce>
+<puce>lien avec texte : <lien url="http://www.siteduzero.com">Site du Zéro</lien></puce>
+
+<puce>lien vers google (langue défaut) : <lien url="Site du Zéro" type="google">Site du Zéro sur google fr (défaut)</lien></puce>
+<puce>lien vers google (langue fr) : <lien url="Site du Zéro" type="google" langue="fr">Site du Zéro sur google fr</lien></puce>
+<puce>lien vers google (langue en) : <lien url="Site du Zéro" type="google" langue="en">Site du Zéro sur google en</lien></puce>
+
+<puce>lien vers google (langue fr car blocage des langues dans le xsl mais il suffit de changer la condition pour faire sauter ça) : <lien url="Site du Zero" type="google" langue="it">Site du Zéro</lien></puce>
+
+<puce>lien vers wikipedia (langue défaut) : <lien url="Site du Zéro" type="wikipedia">Site du Zéro sur wikipedia fr (défaut)</lien></puce>
+<puce>lien vers wikipedia (langue fr) : <lien url="Site du Zéro" type="wikipedia" langue="fr">Site du Zéro sur wikipedia fr</lien></puce>
+<puce>lien vers wikipedia (langue en) : <lien url="Site du Zéro" type="wikipedia" langue="en">Site du Zéro sur wikipedia en</lien></puce>
+</liste>	
+	
+<taille valeur="ttpetit">Lorem Ipsum</taille>
+<taille valeur="tpetit">Lorem Ipsum</taille>
+<taille valeur="petit">Lorem Ipsum</taille>
+<taille valeur="gros">Lorem Ipsum</taille>
+<taille valeur="tgros">Lorem Ipsum</taille>
+<taille valeur="ttgros">Lorem Ipsum</taille>
+
+
+<gras>Lorem Ipsum</gras>
+<italique>Lorem Ipsum</italique>
+<souligne>Lorem Ipsum</souligne>
+<barre>Lorem Ipsum</barre>
+
+<information>Information</information>
+<attention>Attention !</attention>
+
+
+<secret>Eo adducta re per Isauriam, rege Persarum bellis finitimis inligato repellenteque a conlimitiis suis ferocissimas gentes, quae mente quadam versabili hostiliter eum saepe incessunt et in nos arma moventem aliquotiens iuvant, Nohodares quidam nomine e numero optimatum, incursare Mesopotamiam quotiens copia dederit ordinatus, explorabat nostra sollicite, si repperisset usquam locum vi subita perrupturus.
+</secret>
+
+<Lorem Ipsum>
+<hr/><div>Lorem Ipsum</div>
+<script type="text/javascript">alert("Lorem Ipsum");</script>
