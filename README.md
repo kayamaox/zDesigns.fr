@@ -1,11 +1,11 @@
-# zDesigns.fr
-Découvrez ici toutes les sources du site zDesigns.fr.
+ï»¿# zDesigns.fr
+DÃ©couvrez ici toutes les sources du site zDesigns.fr.
 
 
 
 # Installation
-- Clonez ce dépôt chez vous
-- Créez une base de donnée dont le nom est indiqué dans /classes/bdd.php à la ligne 8 (mysql_select_db)
+- Clonez ce dÃ©pÃ´t chez vous
+- CrÃ©ez une base de donnÃ©e dont le nom est indiquÃ© dans /classes/bdd.php Ã  la ligne 8 (mysql_select_db)
 - Importez le code SQL que vous trouverez plus bas
 - Allez sur le site que vous venez d'installer, c'est parti !
 
@@ -16,7 +16,7 @@ Découvrez ici toutes les sources du site zDesigns.fr.
 
 
 
-# La base de donnée
+# La base de donnÃ©e
     -- 
     -- Structure de la table ` antiflood ` 
     --  
@@ -84,17 +84,17 @@ Découvrez ici toutes les sources du site zDesigns.fr.
     -- Contenu de la table ` cat` 
     --  
 
-    INSERT INTO cat VALUES ('1','Système d''exploitation','3','','');
+    INSERT INTO cat VALUES ('1','SystÃ¨me d''exploitation','3','','');
     INSERT INTO cat VALUES ('2','Nature','4','','');
-    INSERT INTO cat VALUES ('3','TV / cinéma','5','','');
+    INSERT INTO cat VALUES ('3','TV / cinÃ©ma','5','','');
     INSERT INTO cat VALUES ('4','Sites connus','1','','');
-    INSERT INTO cat VALUES ('5','Géographie','2','','');
+    INSERT INTO cat VALUES ('5','GÃ©ographie','2','','');
     INSERT INTO cat VALUES ('7','Gothique','10','','');
     INSERT INTO cat VALUES ('8','Divers','12','','');
     INSERT INTO cat VALUES ('9','Couleurs','9','','');
     INSERT INTO cat VALUES ('10','Fantaisiste','8','','');
     INSERT INTO cat VALUES ('16','Alimentaire','11','','');
-    INSERT INTO cat VALUES ('17','Jeux vidéo','6','','');
+    INSERT INTO cat VALUES ('17','Jeux vidÃ©o','6','','');
     INSERT INTO cat VALUES ('18','Evenements','7','','');
 
     -- 
@@ -185,11 +185,11 @@ Découvrez ici toutes les sources du site zDesigns.fr.
     --  
 
     INSERT INTO forum_cat VALUES ('1','zDesigns','4','0','0');
-    INSERT INTO forum_cat VALUES ('2','Communauté','5','0','0');
+    INSERT INTO forum_cat VALUES ('2','CommunautÃ©','5','0','0');
     INSERT INTO forum_cat VALUES ('3','Le site','6','0','0');
     INSERT INTO forum_cat VALUES ('4','Administration','1','10','0');
-    INSERT INTO forum_cat VALUES ('5','Modération','3','9','0');
-    INSERT INTO forum_cat VALUES ('6','Développeurs','2','8','0');
+    INSERT INTO forum_cat VALUES ('5','ModÃ©ration','3','9','0');
+    INSERT INTO forum_cat VALUES ('6','DÃ©veloppeurs','2','8','0');
 
     -- 
     -- Structure de la table ` forum_forum ` 
@@ -210,14 +210,14 @@ Découvrez ici toutes les sources du site zDesigns.fr.
     -- Contenu de la table ` forum_forum` 
     --  
 
-    INSERT INTO forum_forum VALUES ('1','1','Vos zDesigns','Montrez vos début de zDesigns et faites vous commenter !','1','0','1');
+    INSERT INTO forum_forum VALUES ('1','1','Vos zDesigns','Montrez vos dÃ©but de zDesigns et faites vous commenter !','1','0','1');
     INSERT INTO forum_forum VALUES ('2','2','Le bar','Discutez de ce que vous voulez ici','1','0','1');
-    INSERT INTO forum_forum VALUES ('3','3','Développement du site','Suivez toute l\\''évolution du site.','1','0','1');
-    INSERT INTO forum_forum VALUES ('4','3','Suggestions et commentaires','Mettez ici toutes vos idées, vos suggestions ou commentaires sur le site.','2','0','1');
+    INSERT INTO forum_forum VALUES ('3','3','DÃ©veloppement du site','Suivez toute l\\''Ã©volution du site.','1','0','1');
+    INSERT INTO forum_forum VALUES ('4','3','Suggestions et commentaires','Mettez ici toutes vos idÃ©es, vos suggestions ou commentaires sur le site.','2','0','1');
     INSERT INTO forum_forum VALUES ('5','3','Rapport de bugs','Vous avez trouvez un bug ? Postez-le ici.','3','0','1');
-    INSERT INTO forum_forum VALUES ('6','4','Développement','Développement du site ','1','10','10');
-    INSERT INTO forum_forum VALUES ('7','5','Modération','Parler de la modération ! Ce forum vous est réservé.','1','9','9');
-    INSERT INTO forum_forum VALUES ('8','6','Développement','Forum reservé aux développeurs','1','8','8');
+    INSERT INTO forum_forum VALUES ('6','4','DÃ©veloppement','DÃ©veloppement du site ','1','10','10');
+    INSERT INTO forum_forum VALUES ('7','5','ModÃ©ration','Parler de la modÃ©ration ! Ce forum vous est rÃ©servÃ©.','1','9','9');
+    INSERT INTO forum_forum VALUES ('8','6','DÃ©veloppement','Forum reservÃ© aux dÃ©veloppeurs','1','8','8');
 
     -- 
     -- Structure de la table ` forum_reponse ` 
@@ -342,168 +342,168 @@ Découvrez ici toutes les sources du site zDesigns.fr.
     -- Contenu de la table ` messages` 
     --  
 
-    INSERT INTO messages VALUES ('1','Vous êtes maintenant connecté(e).','0');
+    INSERT INTO messages VALUES ('1','Vous Ãªtes maintenant connectÃ©(e).','0');
     INSERT INTO messages VALUES ('2','Vous venez de vous deconnecter.','0');
-    INSERT INTO messages VALUES ('3','La demande de validation a été prise en compte.','0');
-    INSERT INTO messages VALUES ('4','Vous n''avez pas le droit d''être ici !','1');
-    INSERT INTO messages VALUES ('6','Vous n''êtes pas connecté !','1');
+    INSERT INTO messages VALUES ('3','La demande de validation a Ã©tÃ© prise en compte.','0');
+    INSERT INTO messages VALUES ('4','Vous n''avez pas le droit d''Ãªtre ici !','1');
+    INSERT INTO messages VALUES ('6','Vous n''Ãªtes pas connectÃ© !','1');
     INSERT INTO messages VALUES ('5','Cette action n''existe pas !','1');
     INSERT INTO messages VALUES ('7','Ce zDesign n''existe pas !','1');
     INSERT INTO messages VALUES ('8','Ce zDesign ne vous appartiens pas !','1');
-    INSERT INTO messages VALUES ('9','Ce répertoire n''existe pas !','1');
-    INSERT INTO messages VALUES ('10','Le répertoire hôte n''existe pas !','1');
-    INSERT INTO messages VALUES ('11','Le fichier à bien été ajouté.','0');
-    INSERT INTO messages VALUES ('12','Rien a été poste !','1');
+    INSERT INTO messages VALUES ('9','Ce rÃ©pertoire n''existe pas !','1');
+    INSERT INTO messages VALUES ('10','Le rÃ©pertoire hÃ´te n''existe pas !','1');
+    INSERT INTO messages VALUES ('11','Le fichier Ã  bien Ã©tÃ© ajoutÃ©.','0');
+    INSERT INTO messages VALUES ('12','Rien a Ã©tÃ© poste !','1');
     INSERT INTO messages VALUES ('13','Une erreur est survenue lors de l''ajout du fichier !','1');
-    INSERT INTO messages VALUES ('14','Votre zDesigns est déjà validé !','1');
-    INSERT INTO messages VALUES ('15','Le fichier CSS à bien été ajouté.','0');
-    INSERT INTO messages VALUES ('16','Aucun fichier n''est selectionné !','1');
+    INSERT INTO messages VALUES ('14','Votre zDesigns est dÃ©jÃ  validÃ© !','1');
+    INSERT INTO messages VALUES ('15','Le fichier CSS Ã  bien Ã©tÃ© ajoutÃ©.','0');
+    INSERT INTO messages VALUES ('16','Aucun fichier n''est selectionnÃ© !','1');
     INSERT INTO messages VALUES ('17','Ce nom de fichier n''est pas correcte !','1');
-    INSERT INTO messages VALUES ('18','Le fichier a bien été modifié.','0');
-    INSERT INTO messages VALUES ('19','Le nom du fichier à renommer n''est pas correcte !','1');
-    INSERT INTO messages VALUES ('20','Le fichier a bien été renommé.','0');
-    INSERT INTO messages VALUES ('21','Le nom n''a pas changé.','0');
-    INSERT INTO messages VALUES ('22','Ce fichier CSS existe déjà !','1');
-    INSERT INTO messages VALUES ('23','Ce fichier existe déjà !','1');
-    INSERT INTO messages VALUES ('24','Un fichier portant ce nom existe déjà !','1');
-    INSERT INTO messages VALUES ('25','Le fichier a bien été supprimé.','0');
-    INSERT INTO messages VALUES ('26','Aucun dossier n''est selectionné !','1');
+    INSERT INTO messages VALUES ('18','Le fichier a bien Ã©tÃ© modifiÃ©.','0');
+    INSERT INTO messages VALUES ('19','Le nom du fichier Ã  renommer n''est pas correcte !','1');
+    INSERT INTO messages VALUES ('20','Le fichier a bien Ã©tÃ© renommÃ©.','0');
+    INSERT INTO messages VALUES ('21','Le nom n''a pas changÃ©.','0');
+    INSERT INTO messages VALUES ('22','Ce fichier CSS existe dÃ©jÃ  !','1');
+    INSERT INTO messages VALUES ('23','Ce fichier existe dÃ©jÃ  !','1');
+    INSERT INTO messages VALUES ('24','Un fichier portant ce nom existe dÃ©jÃ  !','1');
+    INSERT INTO messages VALUES ('25','Le fichier a bien Ã©tÃ© supprimÃ©.','0');
+    INSERT INTO messages VALUES ('26','Aucun dossier n''est selectionnÃ© !','1');
     INSERT INTO messages VALUES ('27','Ce nom de dossier n''est pas correcte !','1');
-    INSERT INTO messages VALUES ('28','Le dossier a correctement été renommé.','0');
-    INSERT INTO messages VALUES ('29','Ce nom de dossier existe déjà !','1');
-    INSERT INTO messages VALUES ('30','Le dossier a bien été supprimé.','0');
-    INSERT INTO messages VALUES ('31','Le dossier a bien été ajouté.','0');
-    INSERT INTO messages VALUES ('32','Le fichier a bien été uploadé.','0');
+    INSERT INTO messages VALUES ('28','Le dossier a correctement Ã©tÃ© renommÃ©.','0');
+    INSERT INTO messages VALUES ('29','Ce nom de dossier existe dÃ©jÃ  !','1');
+    INSERT INTO messages VALUES ('30','Le dossier a bien Ã©tÃ© supprimÃ©.','0');
+    INSERT INTO messages VALUES ('31','Le dossier a bien Ã©tÃ© ajoutÃ©.','0');
+    INSERT INTO messages VALUES ('32','Le fichier a bien Ã©tÃ© uploadÃ©.','0');
     INSERT INTO messages VALUES ('33','Une erreur interne est survenue !','1');
     INSERT INTO messages VALUES ('34','Le fichier est trop lourd !','1');
-    INSERT INTO messages VALUES ('35','Le fichier n''est pas une archive zippée !','1');
+    INSERT INTO messages VALUES ('35','Le fichier n''est pas une archive zippÃ©e !','1');
     INSERT INTO messages VALUES ('36','Le fichier est introuvable !','1');
     INSERT INTO messages VALUES ('37','Vous n''avez fait aucune demande !','1');
-    INSERT INTO messages VALUES ('38','Le zDesign a bien été supprimé.','0');
-    INSERT INTO messages VALUES ('39','La dévalidation du zDesign a été prise en compte.','0');
-    INSERT INTO messages VALUES ('40','La rétraction de la validation a été prise en compte.','0');
-    INSERT INTO messages VALUES ('41','Vous n''avez pas choisi de catégorie !','1');
-    INSERT INTO messages VALUES ('42','Cette catégorie n''existe pas !','1');
-    INSERT INTO messages VALUES ('43','La demande de validation a été prise en compte.','0');
-    INSERT INTO messages VALUES ('44','Votre mot de passe est erroné!','1');
+    INSERT INTO messages VALUES ('38','Le zDesign a bien Ã©tÃ© supprimÃ©.','0');
+    INSERT INTO messages VALUES ('39','La dÃ©validation du zDesign a Ã©tÃ© prise en compte.','0');
+    INSERT INTO messages VALUES ('40','La rÃ©traction de la validation a Ã©tÃ© prise en compte.','0');
+    INSERT INTO messages VALUES ('41','Vous n''avez pas choisi de catÃ©gorie !','1');
+    INSERT INTO messages VALUES ('42','Cette catÃ©gorie n''existe pas !','1');
+    INSERT INTO messages VALUES ('43','La demande de validation a Ã©tÃ© prise en compte.','0');
+    INSERT INTO messages VALUES ('44','Votre mot de passe est erronÃ©!','1');
     INSERT INTO messages VALUES ('45','Votre pseudo n''existe pas !','1');
     INSERT INTO messages VALUES ('46','Il faut remplir tous les champs !','1');
     INSERT INTO messages VALUES ('47','Droits incorrects !','1');
-    INSERT INTO messages VALUES ('48','La description a bien été mise à jour.','0');
+    INSERT INTO messages VALUES ('48','La description a bien Ã©tÃ© mise Ã  jour.','0');
     INSERT INTO messages VALUES ('49','Le fichier n''est pas dans un bon format !','1');
     INSERT INTO messages VALUES ('50','Le fichier n''est pas une image ou est un fichier bmp !','1');
     INSERT INTO messages VALUES ('51','La description est trop longue !','1');
-    INSERT INTO messages VALUES ('52','Votre message a été pris en compte ! Merci ! ;-)','0');
-    INSERT INTO messages VALUES ('53','Vous voilà inscrit ! Connectez-vous maintenant !','0');
+    INSERT INTO messages VALUES ('52','Votre message a Ã©tÃ© pris en compte ! Merci ! ;-)','0');
+    INSERT INTO messages VALUES ('53','Vous voilÃ  inscrit ! Connectez-vous maintenant !','0');
     INSERT INTO messages VALUES ('54','Votre mot de passe n''est pas rempli !','1');
     INSERT INTO messages VALUES ('55','Votre mot de passe de confirmation n''est pas rempli !','1');
-    INSERT INTO messages VALUES ('56','Votre mot de passe diffère de votre mot de passe de confirmation !','1');
+    INSERT INTO messages VALUES ('56','Votre mot de passe diffÃ¨re de votre mot de passe de confirmation !','1');
     INSERT INTO messages VALUES ('57','Votre adresse e-mail n''est pas remplie !','1');
-    INSERT INTO messages VALUES ('58','Votre adresse mail est déjà utilisé par un membre !','1');
+    INSERT INTO messages VALUES ('58','Votre adresse mail est dÃ©jÃ  utilisÃ© par un membre !','1');
     INSERT INTO messages VALUES ('59','Votre adresse mail n''a pas un format valide !','1');
-    INSERT INTO messages VALUES ('60','Vous ne pouvez pas vous inscrire car vous êtes déja connecté !','1');
+    INSERT INTO messages VALUES ('60','Vous ne pouvez pas vous inscrire car vous Ãªtes dÃ©ja connectÃ© !','1');
     INSERT INTO messages VALUES ('61','Votre pseudo n''est pas rempli !','1');
-    INSERT INTO messages VALUES ('62','Votre pseudo est déjà utilisé par un membre !','1');
+    INSERT INTO messages VALUES ('62','Votre pseudo est dÃ©jÃ  utilisÃ© par un membre !','1');
     INSERT INTO messages VALUES ('63','Votre adresse mail de confirmation n''est pas remplie !','1');
-    INSERT INTO messages VALUES ('64','Votre adresse mail diffère de votre adresse mail de confirmation !','1');
-    INSERT INTO messages VALUES ('65','Le code de vérification n''est pas rempli !','1');
-    INSERT INTO messages VALUES ('66','Le code de vérification n''est pas bon !','1');
+    INSERT INTO messages VALUES ('64','Votre adresse mail diffÃ¨re de votre adresse mail de confirmation !','1');
+    INSERT INTO messages VALUES ('65','Le code de vÃ©rification n''est pas rempli !','1');
+    INSERT INTO messages VALUES ('66','Le code de vÃ©rification n''est pas bon !','1');
     INSERT INTO messages VALUES ('67','Vous n''avez pas donner de note au site !','1');
-    INSERT INTO messages VALUES ('68','La note entrée n''est pas comprise entre 1 et 10 !','1');
-    INSERT INTO messages VALUES ('69','Le nouveau message a bien été ajouté.','0');
-    INSERT INTO messages VALUES ('70','Aucun message n''est selectionné !','1');
+    INSERT INTO messages VALUES ('68','La note entrÃ©e n''est pas comprise entre 1 et 10 !','1');
+    INSERT INTO messages VALUES ('69','Le nouveau message a bien Ã©tÃ© ajoutÃ©.','0');
+    INSERT INTO messages VALUES ('70','Aucun message n''est selectionnÃ© !','1');
     INSERT INTO messages VALUES ('71','Ce message n''existe pas !','1');
-    INSERT INTO messages VALUES ('72','Le message a bien été supprimé.','0');
-    INSERT INTO messages VALUES ('73','Le message a bien été mis à jour.','0');
-    INSERT INTO messages VALUES ('74','Le post-it a bien été supprimé.','0');
-    INSERT INTO messages VALUES ('75','Le post-it a bien été modifié.','0');
-    INSERT INTO messages VALUES ('76','Le post-it a bien été ajouté.','0');
-    INSERT INTO messages VALUES ('77','L''ordre des post-it a bien été "lissé".','0');
-    INSERT INTO messages VALUES ('78','L''ordre des post-it a bien été changé.','0');
-    INSERT INTO messages VALUES ('79','Aucune catégorie n''est séléctionnée !','1');
-    INSERT INTO messages VALUES ('80','La catégorie a bien été supprimée.','0');
-    INSERT INTO messages VALUES ('81','Le message du livre d''or a bien été modifié.','0');
-    INSERT INTO messages VALUES ('82','Le message du livre d''or a bien été supprimé.','0');
-    INSERT INTO messages VALUES ('83','La catégorie a bien été mise à jour.','0');
-    INSERT INTO messages VALUES ('84','La catégorie a bien été ajoutée.','0');
-    INSERT INTO messages VALUES ('85','Ce zDesign n''appartient pas à ce membre !','1');
-    INSERT INTO messages VALUES ('86','Ce zdesign a bien été supprimé.','0');
-    INSERT INTO messages VALUES ('87','Ce zdesign a bien été accepté.','0');
-    INSERT INTO messages VALUES ('88','Ce zdesign a bien été refusé.','0');
-    INSERT INTO messages VALUES ('89','Aucun zDesign n''est selectionné !','1');
-    INSERT INTO messages VALUES ('90','Vous allez être redirigé sur le site du zéro.','0');
-    INSERT INTO messages VALUES ('91','Le nouveau zDesign a bien été créé.','0');
+    INSERT INTO messages VALUES ('72','Le message a bien Ã©tÃ© supprimÃ©.','0');
+    INSERT INTO messages VALUES ('73','Le message a bien Ã©tÃ© mis Ã  jour.','0');
+    INSERT INTO messages VALUES ('74','Le post-it a bien Ã©tÃ© supprimÃ©.','0');
+    INSERT INTO messages VALUES ('75','Le post-it a bien Ã©tÃ© modifiÃ©.','0');
+    INSERT INTO messages VALUES ('76','Le post-it a bien Ã©tÃ© ajoutÃ©.','0');
+    INSERT INTO messages VALUES ('77','L''ordre des post-it a bien Ã©tÃ© "lissÃ©".','0');
+    INSERT INTO messages VALUES ('78','L''ordre des post-it a bien Ã©tÃ© changÃ©.','0');
+    INSERT INTO messages VALUES ('79','Aucune catÃ©gorie n''est sÃ©lÃ©ctionnÃ©e !','1');
+    INSERT INTO messages VALUES ('80','La catÃ©gorie a bien Ã©tÃ© supprimÃ©e.','0');
+    INSERT INTO messages VALUES ('81','Le message du livre d''or a bien Ã©tÃ© modifiÃ©.','0');
+    INSERT INTO messages VALUES ('82','Le message du livre d''or a bien Ã©tÃ© supprimÃ©.','0');
+    INSERT INTO messages VALUES ('83','La catÃ©gorie a bien Ã©tÃ© mise Ã  jour.','0');
+    INSERT INTO messages VALUES ('84','La catÃ©gorie a bien Ã©tÃ© ajoutÃ©e.','0');
+    INSERT INTO messages VALUES ('85','Ce zDesign n''appartient pas Ã  ce membre !','1');
+    INSERT INTO messages VALUES ('86','Ce zdesign a bien Ã©tÃ© supprimÃ©.','0');
+    INSERT INTO messages VALUES ('87','Ce zdesign a bien Ã©tÃ© acceptÃ©.','0');
+    INSERT INTO messages VALUES ('88','Ce zdesign a bien Ã©tÃ© refusÃ©.','0');
+    INSERT INTO messages VALUES ('89','Aucun zDesign n''est selectionnÃ© !','1');
+    INSERT INTO messages VALUES ('90','Vous allez Ãªtre redirigÃ© sur le site du zÃ©ro.','0');
+    INSERT INTO messages VALUES ('91','Le nouveau zDesign a bien Ã©tÃ© crÃ©Ã©.','0');
     INSERT INTO messages VALUES ('92','Votre message n''a pas une arborescence correcte !','1');
-    INSERT INTO messages VALUES ('93','Il vous faut donner un titre à la news !','1');
-    INSERT INTO messages VALUES ('94','La news à bien été ajoutée.','0');
-    INSERT INTO messages VALUES ('95','Aucune news ne correspond à ce numéro !','1');
-    INSERT INTO messages VALUES ('96','Aucune news n''est séléctionnée !','1');
-    INSERT INTO messages VALUES ('97','La news a bien été éditée.','0');
-    INSERT INTO messages VALUES ('98','La news a bien été supprimée.','0');
+    INSERT INTO messages VALUES ('93','Il vous faut donner un titre Ã  la news !','1');
+    INSERT INTO messages VALUES ('94','La news Ã  bien Ã©tÃ© ajoutÃ©e.','0');
+    INSERT INTO messages VALUES ('95','Aucune news ne correspond Ã  ce numÃ©ro !','1');
+    INSERT INTO messages VALUES ('96','Aucune news n''est sÃ©lÃ©ctionnÃ©e !','1');
+    INSERT INTO messages VALUES ('97','La news a bien Ã©tÃ© Ã©ditÃ©e.','0');
+    INSERT INTO messages VALUES ('98','La news a bien Ã©tÃ© supprimÃ©e.','0');
     INSERT INTO messages VALUES ('99','Ce forum n''existe pas !','1');
-    INSERT INTO messages VALUES ('100','Aucun forum n''est selectionné !','1');
-    INSERT INTO messages VALUES ('101','Aucun forum ne correspond à ce numéro !','1');
-    INSERT INTO messages VALUES ('102','Aucune catégorie ne correspond à ce numéro !','1');
+    INSERT INTO messages VALUES ('100','Aucun forum n''est selectionnÃ© !','1');
+    INSERT INTO messages VALUES ('101','Aucun forum ne correspond Ã  ce numÃ©ro !','1');
+    INSERT INTO messages VALUES ('102','Aucune catÃ©gorie ne correspond Ã  ce numÃ©ro !','1');
     INSERT INTO messages VALUES ('103','Vous n''avez pas le droit de visualiser ce forum !','1');
-    INSERT INTO messages VALUES ('104','Vous n''avez pas le droit d''écrire sur ce forum !','1');
+    INSERT INTO messages VALUES ('104','Vous n''avez pas le droit d''Ã©crire sur ce forum !','1');
     INSERT INTO messages VALUES ('105','Vous devez rentrer un titre pour votre nouveau topic !','1');
     INSERT INTO messages VALUES ('106','Votre titre est trop long !','1');
     INSERT INTO messages VALUES ('107','Votre sous-titre est trop long !','1');
-    INSERT INTO messages VALUES ('108','Votre nouveau topic à été ajouté.','0');
-    INSERT INTO messages VALUES ('109','Aucun sujet n''est selectionné !','1');
-    INSERT INTO messages VALUES ('110','Aucun sujet ne correspond à ce numéro !','1');
+    INSERT INTO messages VALUES ('108','Votre nouveau topic Ã  Ã©tÃ© ajoutÃ©.','0');
+    INSERT INTO messages VALUES ('109','Aucun sujet n''est selectionnÃ© !','1');
+    INSERT INTO messages VALUES ('110','Aucun sujet ne correspond Ã  ce numÃ©ro !','1');
     INSERT INTO messages VALUES ('111','Vous n''avez pas le droit de visualiser ce forum !','1');
     INSERT INTO messages VALUES ('112','Vous n''avez pas le droit de lire ce sujet !','1');
-    INSERT INTO messages VALUES ('113','Vous n''avez pas le droit d''écrire dans ce forum !','1');
-    INSERT INTO messages VALUES ('114','Ce sujet est fermé ! ','1');
-    INSERT INTO messages VALUES ('115','Votre réponse a bien été ajoutée.','0');
-    INSERT INTO messages VALUES ('116','Cette réponse n''existe pas  !','1');
-    INSERT INTO messages VALUES ('117','Vous n''avez pas le droit d''éditer cette réponse !','1');
-    INSERT INTO messages VALUES ('118','Le message a bien été mis à jour.','0');
-    INSERT INTO messages VALUES ('119','Ce sujet est maintenant notifié.','0');
-    INSERT INTO messages VALUES ('120','Ce sujet a déjà été notifié !','1');
-    INSERT INTO messages VALUES ('121','Ce sujet n''est maintenant plus notifié.','0');
-    INSERT INTO messages VALUES ('122','Ce sujet n''est pas notifié, vous ne pous pas effectuer cette action !','1');
-    INSERT INTO messages VALUES ('123','Vous ne pouvez pas poster deux fois d''affilée en 24h !','1');
+    INSERT INTO messages VALUES ('113','Vous n''avez pas le droit d''Ã©crire dans ce forum !','1');
+    INSERT INTO messages VALUES ('114','Ce sujet est fermÃ© ! ','1');
+    INSERT INTO messages VALUES ('115','Votre rÃ©ponse a bien Ã©tÃ© ajoutÃ©e.','0');
+    INSERT INTO messages VALUES ('116','Cette rÃ©ponse n''existe pas  !','1');
+    INSERT INTO messages VALUES ('117','Vous n''avez pas le droit d''Ã©diter cette rÃ©ponse !','1');
+    INSERT INTO messages VALUES ('118','Le message a bien Ã©tÃ© mis Ã  jour.','0');
+    INSERT INTO messages VALUES ('119','Ce sujet est maintenant notifiÃ©.','0');
+    INSERT INTO messages VALUES ('120','Ce sujet a dÃ©jÃ  Ã©tÃ© notifiÃ© !','1');
+    INSERT INTO messages VALUES ('121','Ce sujet n''est maintenant plus notifiÃ©.','0');
+    INSERT INTO messages VALUES ('122','Ce sujet n''est pas notifiÃ©, vous ne pous pas effectuer cette action !','1');
+    INSERT INTO messages VALUES ('123','Vous ne pouvez pas poster deux fois d''affilÃ©e en 24h !','1');
     INSERT INTO messages VALUES ('124','Une erreur interne est survenue !','1');
-    INSERT INTO messages VALUES ('125','Doucement !  (Contrôle antiflood 20sec)','1');
-    INSERT INTO messages VALUES ('126','Ce message a été résolu.','0');
-    INSERT INTO messages VALUES ('127','Ce message n''est plus résolu.','0');
+    INSERT INTO messages VALUES ('125','Doucement !  (ContrÃ´le antiflood 20sec)','1');
+    INSERT INTO messages VALUES ('126','Ce message a Ã©tÃ© rÃ©solu.','0');
+    INSERT INTO messages VALUES ('127','Ce message n''est plus rÃ©solu.','0');
     INSERT INTO messages VALUES ('128','Ce sujet ne vous appartient pas !','1');
-    INSERT INTO messages VALUES ('129','Ce topic est déjà résolu !','1');
-    INSERT INTO messages VALUES ('130','Ce topic n''est pas résolu !','1');
+    INSERT INTO messages VALUES ('129','Ce topic est dÃ©jÃ  rÃ©solu !','1');
+    INSERT INTO messages VALUES ('130','Ce topic n''est pas rÃ©solu !','1');
     INSERT INTO messages VALUES ('131','Vous devez remplir tous les champs !','1');
-    INSERT INTO messages VALUES ('132','Votre message à bien été envoyé.','0');
-    INSERT INTO messages VALUES ('133','Le messages de vérouillage a été ajouté avec succés.','0');
-    INSERT INTO messages VALUES ('134','Vous n''avez pas les droits necéssaires !','1');
-    INSERT INTO messages VALUES ('135','Ce sujet est déjà verrouiller !','1');
-    INSERT INTO messages VALUES ('136','Ce sujet a bien été fermé.','0');
+    INSERT INTO messages VALUES ('132','Votre message Ã  bien Ã©tÃ© envoyÃ©.','0');
+    INSERT INTO messages VALUES ('133','Le messages de vÃ©rouillage a Ã©tÃ© ajoutÃ© avec succÃ©s.','0');
+    INSERT INTO messages VALUES ('134','Vous n''avez pas les droits necÃ©ssaires !','1');
+    INSERT INTO messages VALUES ('135','Ce sujet est dÃ©jÃ  verrouiller !','1');
+    INSERT INTO messages VALUES ('136','Ce sujet a bien Ã©tÃ© fermÃ©.','0');
     INSERT INTO messages VALUES ('137','Ce sujet n''est pas verrouiller !','1');
-    INSERT INTO messages VALUES ('138','Ce sujet a bien été déverrouiller.','0');
+    INSERT INTO messages VALUES ('138','Ce sujet a bien Ã©tÃ© dÃ©verrouiller.','0');
     INSERT INTO messages VALUES ('139','Le titre que vous avez choisi est trop long !','1');
-    INSERT INTO messages VALUES ('140','Le titre de votre zDesign a bien été modifié.','0');
-    INSERT INTO messages VALUES ('141','La taille de votre zDesign à atteind le maximum !','1');
-    INSERT INTO messages VALUES ('142','Votre compte a bien été modifié.','0');
+    INSERT INTO messages VALUES ('140','Le titre de votre zDesign a bien Ã©tÃ© modifiÃ©.','0');
+    INSERT INTO messages VALUES ('141','La taille de votre zDesign Ã  atteind le maximum !','1');
+    INSERT INTO messages VALUES ('142','Votre compte a bien Ã©tÃ© modifiÃ©.','0');
     INSERT INTO messages VALUES ('143','Votre zDesign contient trop d''erreurs !','1');
-    INSERT INTO messages VALUES ('144','Vous devez ajouter un aperçu de votre zDesign!','1');
+    INSERT INTO messages VALUES ('144','Vous devez ajouter un aperÃ§u de votre zDesign!','1');
     INSERT INTO messages VALUES ('145','Vous devez ajouter une description !','1');
-    INSERT INTO messages VALUES ('146','Votre pack design a bien été importé.','0');
+    INSERT INTO messages VALUES ('146','Votre pack design a bien Ã©tÃ© importÃ©.','0');
     INSERT INTO messages VALUES ('147','Ce membre n''existe pas !','1');
-    INSERT INTO messages VALUES ('148','Aucun membre n''est selectionné !','1');
-    INSERT INTO messages VALUES ('149','Le nom du fichier à copier n''est pas correct !','1');
-    INSERT INTO messages VALUES ('150','Le fichier à copier existe déjà dans votre répertoire !','1');
-    INSERT INTO messages VALUES ('151','Le fichier a bien été ajouté à votre dossier.','0');
-    INSERT INTO messages VALUES ('152','Les fichiers ont bien été placés dans le presse-papier.','0');
-    INSERT INTO messages VALUES ('153','Aucun fichier n''a été selectionné !','1');
-    INSERT INTO messages VALUES ('154','Aucun éléments dans le presse-papier !','1');
-    INSERT INTO messages VALUES ('155','Les éléments ont bien été copié.','0');
+    INSERT INTO messages VALUES ('148','Aucun membre n''est selectionnÃ© !','1');
+    INSERT INTO messages VALUES ('149','Le nom du fichier Ã  copier n''est pas correct !','1');
+    INSERT INTO messages VALUES ('150','Le fichier Ã  copier existe dÃ©jÃ  dans votre rÃ©pertoire !','1');
+    INSERT INTO messages VALUES ('151','Le fichier a bien Ã©tÃ© ajoutÃ© Ã  votre dossier.','0');
+    INSERT INTO messages VALUES ('152','Les fichiers ont bien Ã©tÃ© placÃ©s dans le presse-papier.','0');
+    INSERT INTO messages VALUES ('153','Aucun fichier n''a Ã©tÃ© selectionnÃ© !','1');
+    INSERT INTO messages VALUES ('154','Aucun Ã©lÃ©ments dans le presse-papier !','1');
+    INSERT INTO messages VALUES ('155','Les Ã©lÃ©ments ont bien Ã©tÃ© copiÃ©.','0');
     INSERT INTO messages VALUES ('156','Votre adresse e-mail n''existe pas !','1');
-    INSERT INTO messages VALUES ('157','Votre adresse e-mail n''existe pas dans la table ou le code de vérification est faux.','1');
-    INSERT INTO messages VALUES ('158','Vous êtes déjà connecté !','1');
-    INSERT INTO messages VALUES ('159','Un e-mail avec des explications vient de vous être envoyé.','0');
-    INSERT INTO messages VALUES ('160','Il manque des paramètres pour cette page !','1');
-    INSERT INTO messages VALUES ('161','Un nouveau mot de passe vient de vous être envoyé par mail.','0');
-    INSERT INTO messages VALUES ('162','Le zExplorer est fermé pour cause de migration vers une V2 (prévue dimanche soir 20 Mars)','1');
+    INSERT INTO messages VALUES ('157','Votre adresse e-mail n''existe pas dans la table ou le code de vÃ©rification est faux.','1');
+    INSERT INTO messages VALUES ('158','Vous Ãªtes dÃ©jÃ  connectÃ© !','1');
+    INSERT INTO messages VALUES ('159','Un e-mail avec des explications vient de vous Ãªtre envoyÃ©.','0');
+    INSERT INTO messages VALUES ('160','Il manque des paramÃ¨tres pour cette page !','1');
+    INSERT INTO messages VALUES ('161','Un nouveau mot de passe vient de vous Ãªtre envoyÃ© par mail.','0');
+    INSERT INTO messages VALUES ('162','Le zExplorer est fermÃ© pour cause de migration vers une V2 (prÃ©vue dimanche soir 20 Mars)','1');
     INSERT INTO messages VALUES ('163','En cours de construction','1');
 
     -- 
