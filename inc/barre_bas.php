@@ -51,9 +51,7 @@ else
                         <li><a href="<?php echo ROOT ?>admin-todo-add.html">Ajouter tâche</a></li>
                     </ul>
                     <ul><li class="titre"><span class="fl">Plus</span> </li>
-                        <li><a href="http://www.zdesigns.fr:2082">cPanel</a></li>
-                        <li><a href="<?php echo ROOT ?>forum.html">Forum</a></li>
-                        <li><a href="<?php echo ROOT ?>admin.html">Admin >></a></li>
+                        <li><a href="<?php echo ROOT ?>admin.html">Administration</a></li>
                     </ul>
                 </div>
             </div>
