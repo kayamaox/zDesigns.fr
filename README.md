@@ -7,6 +7,8 @@ Découvrez ici toutes les sources du site zDesigns.fr.
 - Clonez ce dépôt chez vous
 - Créez une base de donnée dont le nom est indiqué dans /classes/bdd.php à la ligne 8 (mysql_select_db)
 - Importez le code SQL que vous trouverez plus bas
+- Activez dans PHP l'extension php_xsl
+- Activez dans Apache mod_rewrite
 - Allez sur le site que vous venez d'installer, c'est parti !
 
 
